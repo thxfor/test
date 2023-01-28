@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="box col-6 mx-auto pt-5 mt-5">
+      <div class="questions col-12 text-center">
+          <p class="fs-3 question">Как зовут этого монстра?</p>
+          <p class="fs-3 question1">Сколько стоит майнкрафт?</p>
+          <p class="fs-3 question2">Как зовут главного героя?</p>
+          <p class="fs-3 victory2">Ты победил, поздравляю</p>
+      </div>
+
+      <div class="boximg1 col-6 mx-auto">
+        <img src="крипак.jpg" class="creeper ms-45">
+        <img src="майн.jpg" class="minecraft ms-45">
+        <img src="стив.jpg" class="steve ms-45">
+        <img src="победа.jpg" class="victory ms-45">
+      </div>
+
+      <div class="boxvrts1 mt-5 col-12 d-flex mt-5">
+        <div class="variant1 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest">Крипер</p>
+        </div>
+        <div class="variant2 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest0">Крик</p>
+        </div>
+        <div class="variant3 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest01">Криса</p>
+        </div>
+      </div>
+
+      <div class="boxvrts2 col-12 d-flex mt-1">
+        <div class="variant4 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest1">0 руб</p>
+        </div>
+        <div class="variant5 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest2">15 руб</p>
+        </div>
+        <div class="variant6 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest3">1799 руб</p>
+        </div>
+      </div>
+
+      <div class="boxvrts3 col-12 d-flex mt-1">
+        <div class="variant7 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest1">Жора</p>
+        </div>
+        <div class="variant8 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest2">Стив</p>
+        </div>
+        <div class="variant9 ms-5 col-35 text-center pt-5">
+            <p class="mt-5 quest3">Никита</p>
+        </div>
+
+        <div class="victory3 ms-346 col-35 text-center pt-5">
+            <p class="mt-5 victory4">Начать заново</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.querySelector('.minecraft').style.display = "none"
+      document.querySelector('.steve').style.display = "none"
+      document.querySelector('.victory').style.display = "none"
+      document.querySelector('.victory2').style.display = "none"
+      document.querySelector('.victory3').style.display = "none"
+      document.querySelector('.variant4').style.display = "none"
+      document.querySelector('.variant5').style.display = "none"
+      document.querySelector('.variant6').style.display = "none"
+      document.querySelector('.variant7').style.display = "none"
+      document.querySelector('.variant8').style.display = "none"
+      document.querySelector('.variant9').style.display = "none"
+      document.querySelector('.question1').style.display = "none"
+      document.querySelector('.question2').style.display = "none"
+
+
+      document.querySelector('.variant1').onclick = function(){
+        alert("лютий пон")
+        document.querySelector('.question').style.display = "none"
+        document.querySelector('.creeper').style.display = "none"
+        document.querySelector('.variant1').style.display = "none"
+        document.querySelector('.variant2').style.display = "none"
+        document.querySelector('.variant3').style.display = "none"
+        document.querySelector('.variant4').style.display = "block"
+        document.querySelector('.variant5').style.display = "block"
+        document.querySelector('.variant6').style.display = "block"
+        document.querySelector('.minecraft').style.display = "block"
+        document.querySelector('.question1').style.display = "block"
+      }
+
+      document.querySelector('.variant2').onclick = function(){
+        alert("не пон")
+      }
+
+      document.querySelector('.variant3').onclick = function(){
+        alert("не пон")
+      }
+
+      document.querySelector('.variant4').onclick = function(){
+        alert("не пон")
+      }
+
+      document.querySelector('.variant5').onclick = function(){
+        alert("не пон")
+      }
+
+      document.querySelector('.variant6').onclick = function(){
+        alert("лютий пон")
+        document.querySelector('.minecraft').style.display = "none"
+        document.querySelector('.question1').style.display = "none"
+        document.querySelector('.variant4').style.display = "none"
+        document.querySelector('.variant5').style.display = "none"
+        document.querySelector('.variant6').style.display = "none"
+        document.querySelector('.steve').style.display = "block"
+        document.querySelector('.question2').style.display = "block"
+        document.querySelector('.variant7').style.display = "block"
+        document.querySelector('.variant8').style.display = "block"
+        document.querySelector('.variant9').style.display = "block"
+      }
+
+      document.querySelector('.variant7').onclick = function(){
+        alert("не пон")
+      }
+      
+      document.querySelector('.variant8').onclick = function(){
+        alert("лютий пон")
+        document.querySelector('.steve').style.display = "none"
+        document.querySelector('.question2').style.display = "none"
+        document.querySelector('.variant7').style.display = "none"
+        document.querySelector('.variant8').style.display = "none"
+        document.querySelector('.variant9').style.display = "none"
+        document.querySelector('.victory').style.display = "block"
+        document.querySelector('.victory2').style.display = "block"
+        document.querySelector('.victory3').style.display = "block"
+      }
+
+      document.querySelector('.variant9').onclick = function(){
+        alert("не пон")
+      }
+
+      document.querySelector('.victory3').onclick = function(){
+        alert("лютий пон")
+        document.querySelector('.victory').style.display = "none"
+        document.querySelector('.victory2').style.display = "none"
+        document.querySelector('.victory3').style.display = "none"
+        document.querySelector('.variant1').style.display = "block"
+        document.querySelector('.variant2').style.display = "block"
+        document.querySelector('.variant3').style.display = "block"
+        document.querySelector('.creeper').style.display = "block"
+        document.querySelector('.question').style.display = "block"
+      }
+
+    </script>
+  </body>
+</html>
